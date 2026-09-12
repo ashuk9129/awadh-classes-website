@@ -32,6 +32,30 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
+/* Shared premium navigation + readable light badges */
+.nav-cta{
+  border-radius:999px !important;
+  padding:14px 24px !important;
+  min-height:48px;
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+  white-space:nowrap;
+}
+
+.mode-badge{
+  color:var(--navy) !important;
+  background:#fff !important;
+  border:1px solid rgba(6,26,51,.14) !important;
+  box-shadow:0 6px 18px rgba(6,26,51,.06);
+  font-weight:700;
+}
+
+.mode-badge:hover{
+  border-color:var(--gold);
+  transform:translateY(-1px);
+}
+
 .program-intro{max-width:820px;margin:0 auto;text-align:center}
 .program-intro .eyebrow{margin-bottom:14px}
 .program-intro h2{margin-bottom:18px}
