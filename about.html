@@ -31,6 +31,26 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
+
+<style>
+.founder-section{background:var(--ivory);}
+.founder-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:56px;align-items:center;}
+.founder-photo{position:relative;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:var(--cream);}
+.founder-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;}
+.founder-photo:after{content:"";position:absolute;inset:16px;border:1px solid rgba(255,255,255,.45);border-radius:20px;pointer-events:none;}
+.founder-copy{max-width:620px;}
+.founder-copy h2{margin-bottom:8px;}
+.founder-role{color:var(--gold);font-weight:700;letter-spacing:.02em;margin-bottom:20px;}
+.founder-quote{font-family:"Playfair Display",serif;font-size:clamp(22px,2.5vw,32px);line-height:1.35;color:var(--navy);margin:24px 0;}
+.founder-copy p{color:var(--muted);line-height:1.8;}
+.founder-points{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:26px 0 30px;}
+.founder-point{padding:15px 17px;border:1px solid var(--line);border-radius:14px;background:#fff;}
+.founder-point strong{display:block;color:var(--ink);font-size:14px;margin-bottom:3px;}
+.founder-point span{font-size:13px;color:var(--muted);}
+@media(max-width:800px){.founder-grid{grid-template-columns:1fr;gap:32px}.founder-photo{max-width:620px;margin:auto}.founder-copy{max-width:none}.founder-points{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.founder-points{grid-template-columns:1fr}.founder-photo img{aspect-ratio:1/1.12}}
+</style>
+
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -69,19 +89,7 @@
     {"@type":"ListItem","position":2,"name":"About","item":"https://awadhclasses.vercel.app/about.html"}
   ]
 }
-  
 </script>
-  <style>
-.nav-cta{
-  border-radius:999px !important;
-  padding:14px 24px !important;
-  min-height:48px;
-  display:inline-flex !important;
-  align-items:center;
-  justify-content:center;
-  white-space:nowrap;
-}
-</style>
 </head>
 
 <body>
@@ -231,22 +239,27 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section founder-section">
   <div class="container">
-    <div class="content-grid">
-      <article class="card">
-        <span class="eyebrow">Founder</span>
-        <h2>Brijesh Kumar</h2>
-        <p><strong>Founder, Awadh Classes</strong></p>
-        <p>The vision is to make personalised academic support accessible through a professional combination of Home Tuition and Online Classes, helping students learn with greater clarity and confidence.</p>
-      </article>
+    <div class="founder-grid">
+      <div class="founder-photo">
+        <img src="assets/images/founder-brijesh-kumar-office.png" alt="Brijesh Kumar, Founder of Awadh Classes, in his office" loading="lazy">
+      </div>
 
-      <article class="card">
-        <span class="eyebrow">Where we support</span>
-        <h3>Gomti Nagar, Lucknow</h3>
-        <p>Awadh Classes serves students through Home Tuition and Online Classes, with academic support for Classes 1–12 across CBSE, ICSE and UP Board.</p>
-        <a href="contact.html">Discuss your requirement →</a>
-      </article>
+      <div class="founder-copy">
+        <span class="eyebrow">Meet the Founder</span>
+        <h2>Brijesh Kumar</h2>
+        <div class="founder-role">Founder, Awadh Classes</div>
+        <p class="founder-quote">“Every student can do better when learning is personal, clear and consistent.”</p>
+        <p>The vision behind Awadh Classes is simple: give students the right academic support, personal attention and a learning environment where they can understand concepts, ask questions and build confidence.</p>
+        <div class="founder-points">
+          <div class="founder-point"><strong>Student-first</strong><span>Learning built around individual needs.</span></div>
+          <div class="founder-point"><strong>Personalised</strong><span>Focused support for every learner.</span></div>
+          <div class="founder-point"><strong>Concept clarity</strong><span>Understand before moving ahead.</span></div>
+          <div class="founder-point"><strong>Consistent progress</strong><span>Practice, revision and feedback.</span></div>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Start a Conversation →</a>
+      </div>
     </div>
   </div>
 </section>
