@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Add the final absolute sitemap URL after the production domain is connected.
+Sitemap: https://awadhclasses.vercel.app/sitemap.xml
